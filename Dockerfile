@@ -82,7 +82,7 @@ COPY z-ocsinventory-server.conf /etc/apache2/conf-available
 RUN chown www-data:www-data  /usr/share/ocsinventory-reports/ocsreports/dbconfig.inc.php ;\
     ln -s /etc/apache2/conf-available/ocsinventory-reports.conf /etc/apache2/conf-enabled/ocsinventory-reports.conf ;\
     ln -s /etc/apache2/conf-available/z-ocsinventory-server.conf /etc/apache2/conf-enabled/z-ocsinventory-server.conf ;\
-    echo 'ServerName localhost' >> /etc/apache2/apache2.conf ;\
+    echo 'ServerName localhost' >> /etc/apache2/apache2.conf
     
 EXPOSE 80
 EXPOSE 443  
